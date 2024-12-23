@@ -27,7 +27,7 @@ TRON network, Wallet, Demo, SpringBoot
 
 测试地址: TFWCgEouJUC1bHLMfjdzLQdXPeiCE1byfw
 
-配置文件: [application-local.yml](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/resources/application-local.yml)
+配置文件: [application-local.yml](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/resources/application-local.yml)
 
 ## 功能简介
 
@@ -151,31 +151,31 @@ TRON network, Wallet, Demo, SpringBoot
 
 # Java 语言版本波场SDK 简要说明
 
-* [TronService.java](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java)  
+* [TronService.java](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java)  
   服务接口实现  
 
-* [public long getHeight() throws IOException](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L42)  
+* [public long getHeight() throws IOException](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L42)  
   获取最新区块高度  
 
-* [public String createNewWallet(String account, String password) throws Exception](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L46)  
+* [public String createNewWallet(String account, String password) throws Exception](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L46)  
   创建账户  
 
-* [public BigDecimal getBalance(String address) throws IOException](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L66)  
+* [public BigDecimal getBalance(String address) throws IOException](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L66)  
   查询TRX 余额
 
-* [public BigDecimal getBalanceOf(String address) throws IOException](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L75)  
+* [public BigDecimal getBalanceOf(String address) throws IOException](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L75)  
   查询USDT（合约） 余额  
 
-* [public String transferTrx(Payment payment) throws Throwable](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L88)  
+* [public String transferTrx(Payment payment) throws Throwable](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L88)  
   发起TRX 资产转账交易  
 
-* [public String transferTrc20(Payment payment) throws Throwable](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L100)  
+* [public String transferTrc20(Payment payment) throws Throwable](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L100)  
   发起USDT (合约) 转账交易  
 
-* [public String getTransaction(String txid) throws IOException](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L130)  
+* [public String getTransaction(String txid) throws IOException](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L130)  
   获取交易数据  
 
-* [public String getTransactionInfo(String txid) throws IOException](https://github.com/wangfeiping/tron-wallet/blob/main/src/main/java/tron/wallet/service/TronService.java#L134)  
+* [public String getTransactionInfo(String txid) throws IOException](https://github.com/wangfeiping/tron-wallet-demo/blob/main/src/main/java/tron/wallet/service/TronService.java#L134)  
   获取交易回执信息  
 
 # 波场Http 接口简要说明
