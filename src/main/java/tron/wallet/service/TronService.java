@@ -49,18 +49,8 @@ public class TronService {
     String hashSalt = AES.HashAndSalt(password.getBytes(StandardCharsets.UTF_8));
     String encPriKey = AES.encryptAes(r.get("privateKey"), hashSalt);
     r.put("privateKey", encPriKey);
-    r.put("user", password);
-    String address = r.get("address");
-    String fileName = Wallet.getWalletFileName(address);
 
-    String keyStorePath = coin.getKeystorePath();
-    File destination = new File(keyStorePath, fileName);
-    destination.createNewFile();
-    FileWriter output = new FileWriter(destination);
-    output.write(JSON.toJSONString(r));
-    output.close();
-
-    return address;
+    return JSON.toJSONString(r);
   }
 
   public BigDecimal getBalance(String address) throws IOException {

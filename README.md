@@ -39,6 +39,13 @@ TRON network, Wallet, Demo, SpringBoot
   ```shell
       # curl -XGET http:/127.0.0.1:9000/demo/address/[request_id]  
       curl -XGET http:/127.0.0.1:9000/demo/address/000000  
+      # 加密后的私钥JSON 字符串
+      response:
+          {
+              "code":0,
+              "message":"success",
+              "data":"{\"privateKey\":\"XaZ8Ad1m1ZI0rnpvCJKC8fCtYNF73Q615kIUGL7UUGdZIcO08WfRN0xZrP68h9Ai+3uMGgZyZVwK0FKAVLPRKMGd/ulFLs86a+MU1HWeCqE=\",\"address\":\"TVdVmHD96xXDNsrTrSBjM6Zip9zE7bWgtH\",\"hexAddress\":\"41d7a8306365a75ce33d9e06248de298b950f37ad5\"}"
+          }
   ```
 * TRX 余额查询接口:  
   ```shell
