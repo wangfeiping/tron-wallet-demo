@@ -314,10 +314,11 @@ TRON network, Wallet, Demo, SpringBoot
 
 ## TRX 转账交易
 
-因为交易设计到签名，所以需要连个步骤:  
+交易涉及到创建、签名和广播:  
 * 创建交易  
 * 签名后广播交易  
 
+接口调用:  
 * /wallet/createtransaction  
   创建交易  
   注意: 波场地址需转换为哈希地址  
